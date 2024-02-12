@@ -6,6 +6,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #ff758f;
+    overflow: hidden; 
 }
 
 .valentines-day-card {
@@ -105,6 +106,16 @@ body {
     bottom: 0;
     right: 0;
     padding-right: 10px;
+}
+
+.backwards {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    padding-right: 10px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
 }
 
 

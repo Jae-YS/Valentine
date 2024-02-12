@@ -6,6 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #fae1dd;
+    overflow: hidden; 
   }
   
   .container {
@@ -267,3 +268,13 @@ body {
   .from {
     top: 42px;
   }
+
+  .backwards {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    padding-right: 10px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}

@@ -4,9 +4,11 @@ const handleSubmit = async (e) => {
   e.preventDefault();
 
   try {
+    const inputValue = document.getElementById("inputCode").value;
+    const randomNumber = Math.floor(Math.random() * 4) + 1;
     const response = await fetch(
-      `http://localhost:8000/search?inputValue=${encodeURIComponent(
-        data.get("code")
+      `http://localhost:8000/vc_card${randomNumber}/?code=${encodeURIComponent(
+        inputValue
       )}`,
       {
         method: "GET",
